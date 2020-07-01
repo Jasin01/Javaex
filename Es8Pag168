@@ -21,14 +21,14 @@ public class Es8Pag168
         		
         	}
         	
-        	if(parola.equalsIgnoreCase(parolaB))
-        		
-            {
-                System.out.println("la parola messa è palindroma");
-            }
-            else
-            {
-                System.out.println("la parola messa non è palindroma");
-            }
+        	if(parola.equalsIgnoreCase(parolaB))	
+                {
+                        System.out.println("la parola messa è palindroma");
+                }
+                
+                else
+                {
+                        System.out.println("la parola messa non è palindroma");
+                }
         }
 }
