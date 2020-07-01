@@ -1,0 +1,44 @@
+import java.util.Scanner;
+public class Es5Pag168 
+{
+	
+        public static void main(String[] args)
+        {
+        	Scanner tastiera=new Scanner(System.in);
+        	
+        	int numerovoti=5;
+        	int voti;
+        	int cont=0, cont2=0, cont3=0, cont4=0, cont5=0;
+        	int i;
+        	System.out.println("inserisci dei numeri da 0 a 30 e ti dirò i voti, inserisci un numero negativo per finire");
+        	
+        	for(i=0;i<numerovoti;i++)
+        	{
+        		voti=tastiera.nextInt();
+        		
+        		if ((voti<=30) && (voti>27))
+            		cont2++;
+            	
+            	 if ((voti<27) && (voti>20))
+            		cont3++;
+            	
+            	 if ((voti<20) && (voti>10))
+            		cont4++;
+            	
+            	 if ((voti<10) && (voti>=1))
+            		 cont5++;
+                	cont++;
+        		
+        		
+        	}	
+        	System.out.println("il numero di voti è di " + cont);
+
+        	
+        System.out.println("i voti ottimi sono " + cont2);
+        System.out.println("i voti discreti sono " + cont3);
+        System.out.println("i voti sufficenti sono " + cont4);
+        System.out.println("i voti non sufficenti sono " + cont5);
+        }      	
+        	
+
+}
