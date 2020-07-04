@@ -1,0 +1,42 @@
+package esercizio1;
+import java.util.Scanner;
+public class Es1Pag205
+{
+	public static int confronta() {
+		int x, y;
+		
+		int vero=0;
+		
+		Scanner tastiera=new Scanner(System.in);
+		
+		System.out.println("scrivi 2 numeri e li sottrarrò");
+		
+		x=tastiera.nextInt();
+		y=tastiera.nextInt();
+		
+		if (x>y)
+		{
+			x=x-y;
+			vero=x;
+		}
+		
+		else if (y>x)
+			
+		{
+			y=y-x;
+			vero=y;
+		}
+		
+		System.out.println(vero);
+		return vero; //va vedere quello che esce dall'if
+	}
+        public static void main(String[] args)
+        
+        {
+        	Scanner tastiera=new Scanner(System.in);
+        	confronta();
+
+        }      	
+        	
+
+}
