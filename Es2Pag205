@@ -1,0 +1,28 @@
+package esercizio1;
+import java.util.Scanner;
+public class Es2Pag1205
+{
+	public static void saluta() {
+		int x;
+		String nome;
+		
+		Scanner tastiera=new Scanner(System.in);
+		
+		System.out.println("Scrivi un numero e una frase e lo invierò tutte le volte scritte");
+		x=tastiera.nextInt();
+		nome=tastiera.next();
+		
+		for(int i=0; i<x; i++)
+		{
+		System.out.println(nome);
+		}
+	}
+        public static void main(String[] args)
+        
+        {
+        	saluta();
+
+        }      	
+        	
+
+}
