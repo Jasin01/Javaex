@@ -1,0 +1,32 @@
+package esercizio1;
+import java.util.Scanner;
+public class Es8Pag168
+{
+	public static void divisibile() {
+		int x, y;
+		boolean divisione=true;
+		Scanner tastiera=new Scanner(System.in);
+		
+		System.out.println("Scrivi un numero e una frase e lo invierò tutte le volte scritte");
+		x=tastiera.nextInt();
+		y=tastiera.nextInt();
+		
+		if(x%y==0)
+		{
+			System.out.println("divisibile");
+		}
+		else
+		{
+			System.out.println("non divisibile");
+		}
+		
+	}
+        public static void main(String[] args)
+        
+        {
+        	divisibile();
+
+        }      	
+        	
+
+}
