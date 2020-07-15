@@ -1,0 +1,44 @@
+public class Es8Pag206
+{
+		public static boolean primo(int x)
+		{
+			Scanner tastiera= new Scanner(System.in);
+				boolean primo=false;
+				for (int i=2;i<x;i++)
+				{
+				if (x%i==0)
+				{
+					primo=false;
+					break;
+				}
+				else primo=true;
+				}
+				return primo;
+		}
+		
+		public static int divisore (int n1)
+		{
+			Scanner tastiera= new Scanner(System.in);
+			int i=2;
+			while (n1%i!=0)
+			{
+				i++;
+			}
+			return i;
+		}
+        public static void main(String[] args)
+        
+        {
+        	Scanner tastiera= new Scanner(System.in);
+        	
+        	int numero;
+        	System.out.println("inserisci un numero intero tranne 0");
+        	numero=tastiera.nextInt();
+        	primo(numero);
+        	System.out.println("il numero inserito è primo");
+        	divisore(numero);
+        	System.out.println("il divisore più piccolo di "+numero+" è "+ divisore(numero));
+        }      	
+        	
+
+}
