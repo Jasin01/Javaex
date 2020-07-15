@@ -1,0 +1,41 @@
+public class Es7Pag206
+{
+		public static void ordinaestampa()
+		{
+			Scanner tastiera= new Scanner(System.in);
+			int x, y, z;
+			System.out.println("metti tre numeri e li metterò in ordine crescente");
+			x=tastiera.nextInt();
+			y=tastiera.nextInt();
+			z=tastiera.nextInt();
+			
+			if ((x>y)&&(y>z))
+				System.out.println(z+" "+y+" "+x);
+			else
+			if ((z>y)&&(y>x))
+				System.out.println(x+" "+y+" "+z);
+			else
+			if ((z>x)&&(x>y))
+				System.out.println(y+" "+x+" "+z);
+			else
+			if ((x>z)&&(z>y))
+				System.out.println(y+" "+z+" "+x);
+			else
+			if ((y>x)&&(x>z))
+				System.out.println(z+" "+x+" "+y);
+			else
+			if ((y>z)&&(z>x))
+				System.out.println(x+" "+z+" "+y);
+			
+			
+		}
+        public static void main(String[] args)
+        
+        {
+        	Scanner tastiera= new Scanner(System.in);
+        	ordinaestampa();
+        	
+        }      	
+        	
+
+}
