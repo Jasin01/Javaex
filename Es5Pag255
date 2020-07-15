@@ -1,0 +1,39 @@
+public class Es5Pag255
+{
+		public static boolean strettamentecrescente(double[] in)
+		{
+		     double n=0;
+		     boolean grande=true;
+			for (int i=1;i<in.length; i++)
+			{
+				n=in[i-1];
+				if (n>in[i])
+				{
+					grande=false;
+					break;
+				}
+			}
+			return grande;
+		}
+        public static void main(String[] args)
+        {
+        	Scanner Tastiera=new Scanner(System.in);
+        	double[] valore=new double[5];
+        	System.out.println("metti 5 numeri e ti dirò se sono crescenti");
+        	for (int i=0; i<valore.length;i++)
+        	{
+        		valore[i]=Tastiera.nextDouble();
+        		
+        	}
+        	if (strettamentecrescente(valore))
+        	{
+        		System.out.println("sono crescenti");
+        	}
+        	else
+        		System.out.println("non sono crescenti");
+        	
+        	
+        }      	
+        	
+
+}
