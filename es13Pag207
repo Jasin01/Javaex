@@ -1,0 +1,24 @@
+public class Es8Pag168
+{
+		public static char cercacarattere(String parola, String parola2)
+		{
+			char uguale='a';
+			for(int i=0,j=0;i<parola.length() && j<parola2.length();i++,j++)
+			{
+				if (parola.charAt(i)==parola2.charAt(j))
+					uguale=parola.charAt(i);
+				break;
+			}
+			return uguale;
+		}
+        public static void main(String[] args)
+        
+        {
+        	Scanner tastiera= new Scanner(System.in);
+        	String ciao;
+        	String ciao2;
+        	System.out.println("scrivi due parole e ti dirò se hanno uno stesso carattere");
+        	ciao=tastiera.next();
+        	ciao2=tastiera.next();
+        	System.out.println("la lettera uguale è " +cercacarattere(ciao, ciao2));
+        }    
