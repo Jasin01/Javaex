@@ -1,0 +1,29 @@
+public class Es4Pag255
+{
+		
+        public static void main(String[] args)
+        
+        {
+        	Scanner tastiera= new Scanner(System.in);
+        	int numero;
+        	int cont=0;
+        	int i=0;
+
+        	int[] telefono=new int[10];
+        	System.out.println("digita 10 numeri");
+        	for (i=0; i<telefono.length; i++) 
+        	{
+        		telefono[i]=tastiera.nextInt();
+        	}
+        	System.out.println("ora digita 1 numero, ti dirò quante volte appare nei 10 numeri");
+        	numero=tastiera.nextInt();
+        	for(i=0; i<telefono.length; i++)
+        	{
+        		if (telefono[i]==numero)
+        		{
+        			cont++;
+        		}
+        	}
+        	System.out.println("il numero appare "+cont+ " volte");
+        }      	
+        
