@@ -1,0 +1,46 @@
+public class ProgPag208
+{
+		public static int somma(int n1, int n2)
+		{
+			int n3=n1+n2;
+			return n3;
+		}
+		public static int sottrazione(int n1, int n2)
+		{
+			int n3=n1-n2;
+			return n3;
+		}
+		public static int moltiplicazione(int n1, int n2)
+		{
+			int n3=n1*n2;
+			return n3;
+		}
+		public static double divisione(double n1, double n2)
+		{
+			double n3=n1/n2;
+			return n3;
+		}
+        public static void main(String[] args)
+        
+        {
+        	Scanner tastiera= new Scanner(System.in);
+        	int n1, n2, n3, n4, n5, n6;
+        	double n7, n8;
+        	System.out.println("scrivi 8 numeri, 2 ci farò l'addizione, 2 sottrazione, 2 moltiplicazione, 2 divisione");
+        	n1=tastiera.nextInt();
+        	n2=tastiera.nextInt();
+        	n3=tastiera.nextInt();
+        	n4=tastiera.nextInt();
+        	n5=tastiera.nextInt();
+        	n6=tastiera.nextInt();
+        	n7=tastiera.nextDouble();
+        	n8=tastiera.nextDouble();
+        	System.out.println("la somma dei primi due numeri è " + somma(n1, n2));
+        	System.out.println("la sottrazione dei due numeri successivi è "+sottrazione( n3, n4));
+        	System.out.println("la moltiplicazione dei due numeri successivi è "+moltiplicazione(n5, n6));
+        	System.out.println("la divisione degli ultimi due numeri è " +divisione(n7, n8));
+        	
+        }      	
+        	
+
+}
