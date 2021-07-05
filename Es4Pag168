@@ -1,34 +1,55 @@
-package esercizio1;
+package primo_programma;
 import java.util.Scanner;
-public class esercizio1 {
-	public static void main(String[] args) {
+
+public class prova
+{
+	public static void main(String[] args) 
+	{
 		Scanner tastiera = new Scanner(System.in);
-		int numero1;
-		int numero2;
-		int numero3;
-		int numero4;
+		
+		int n1,n2,n3,n4,massimo1,massimo2; 
+
 		double media;
-		int massimo1=0;
-		int massimo2=0;
-		int minimo1=0;
-		int minimo2=0;
+	
+		int minimo1,minimo2;
+		
 		System.out.println("Inserisci 4 numeri interi positivi e io ti dirò il numero più alto, più basso e la media");
-			numero1=tastiera.nextInt();
-			numero2=tastiera.nextInt();
-			numero3=tastiera.nextInt();
-			numero4=tastiera.nextInt();
-			massimo1=Math.max(numero1, numero2);
-			massimo2=Math.max(numero3, numero4);
-			if (massimo1>massimo2) 
-			System.out.println("il numero più alto è " + massimo1);
-			else
+		
+		n1 = tastiera.nextInt();    //leggo da tastiera e assegno alle variabili
+		n2 = tastiera.nextInt();
+		n3 = tastiera.nextInt();
+		n4 = tastiera.nextInt();
+		
+		media = (n1+n2+n3+n4)/4;
+		
+		massimo1 = Math.max(n1, n2);
+		massimo2 = Math.max(n3, n4);
+		
+		minimo1 = Math.min(n1, n2);
+		minimo2 = Math.min(n3, n4);
+		
+		if (massimo1>massimo2)
+			{
+				System.out.println("il numero più alto è " + massimo1);
+			}
+		
+		else
+			{
 				System.out.println("il numero più alto è " + massimo2);
-			minimo1=Math.min(numero1, numero2);
-			minimo2=Math.min(numero3, numero4);
-			if (minimo1<minimo2)
+			}
+	
+		
+		if (minimo1<minimo2)
+			{
 				System.out.println("il numero più basso è " + minimo1);
-			else System.out.println("il numero più basso è " + minimo2);
-			media=(numero1+numero2+numero3+numero4)/4;
-			System.out.println("la media è " + media);
+			}
+		
+		else 
+			{
+				System.out.println("il numero più basso è " + minimo2);
+			}
+		
+		System.out.println("la media è " + media);	
+	
 	}
 }
